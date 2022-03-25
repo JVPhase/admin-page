@@ -1,0 +1,25 @@
+{
+  "name": "admin-page",
+  "version": "1.0.0",
+  "description": "Some angularjs usage",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JVPhase/admin-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JVPhase/admin-page/issues"
+  },
+  "homepage": "https://github.com/JVPhase/admin-page#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-resource": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "http-server": "^14.1.0"
+  }
+}

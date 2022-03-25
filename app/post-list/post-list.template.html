@@ -1,0 +1,9 @@
+<div class="admin-page">
+    <input ng-model="$ctrl.query" placeholder="Search..." />
+    <div class="post-list">
+        <div ng-repeat="post in $ctrl.posts | filter:$ctrl.query" class="pl-item">
+            <div class="pli-title">{{post.title}}</div>
+            <div class="pli-short">{{post.short}}</div>
+        </div>
+    </div>
+</div>

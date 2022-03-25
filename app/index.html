@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="adminApp">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Admin page</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="app.css" />
+
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="app.module.js"></script>
+        <script src="app.config.js"></script>
+        <script src="core/core.module.js"></script>
+        <script src="core/post/post.module.js"></script>
+        <script src="core/post/post.service.js"></script>
+        <script src="post-list/post-list.module.js"></script>
+        <script src="post-list/post-list.component.js"></script>
+    </head>
+    <body>
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
+    </body>
+</html>
