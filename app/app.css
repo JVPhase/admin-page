@@ -35,6 +35,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: Montserrat;
 }
 
 /* A elements that don't have a class get default styles */
@@ -69,5 +70,87 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+.admin-page {
+  padding: 30px 50px;
+}
+
+.search {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.empty {
+  font-size: 25px;
+  text-align: center;
+  flex: 1;
+}
+
+.pl-item {
+  padding: 15px;
+  flex: 1 1 100%;
+}
+
+.pl-item-inner {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  max-height: 300px;
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pli-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .pl-item {
+    flex: 1 1 33.333333%;
+  }
+  .pl-item-inner {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .pl-item {
+    flex: 1 1 50%;
+  }
+  .pl-item-inner {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .pl-item {
+    flex: 1 1 25%;
+  }
+  .pl-item-inner {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1590px) {
+  .pl-item {
+    flex: 1 1 20%;
+  }
+  .pl-item-inner {
+    height: 300px;
   }
 }

@@ -1,9 +1,14 @@
 <div class="admin-page">
-    <input ng-model="$ctrl.query" placeholder="Search..." />
+    <input ng-model="$ctrl.query" placeholder="Search..." class="search" />
     <div class="post-list">
         <div ng-repeat="post in $ctrl.posts | filter:$ctrl.query" class="pl-item">
-            <div class="pli-title">{{post.title}}</div>
-            <div class="pli-short">{{post.short}}</div>
+            <div class="pl-item-inner">
+                <h3>{{post.title}}</h3>
+                {{post.short}}
+            </div>
+        </div>
+        <div ng-if="($ctrl.posts | filter:$ctrl.query).length === 0" class="empty">
+            nothing found
         </div>
     </div>
 </div>
